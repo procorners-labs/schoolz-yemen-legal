@@ -1,0 +1,103 @@
+<!doctype html>
+<!--
+  صفحةُ «طلب حذف الحساب» — إلزاميّةٌ عند Google Play لكلّ تطبيقٍ يتيح إنشاءَ حساب.
+
+  🔴 وُجدت لأن صفحةَ الخصوصيّة لا تكفي: قِيس أنها تذكر الحذفَ في **جملةٍ واحدة**
+     («يتواصل مع إدارة مدرسته…») بينما Play تشترط ثلاثةً صراحةً:
+       ① أن تشير إلى اسم التطبيق أو المطوّر كما يظهر في بطاقة المتجر
+       ② أن توضّح **بشكلٍ بارز** خطواتِ طلب الحذف
+       ③ أن تحدّد **ما يُحذف وما يُحتفَظ به ومدّةَ الاحتفاظ**
+  ⚠️ وموضعُها الصحيح مستودعُ `procorners-labs/schoolz-yemen-legal` (عامّ · GitHub Pages)
+     لا هذا المستودعَ الخاصّ — وهذه نسخةُ المصدر، تُنسخ إلى هناك ويُنشر الرابط.
+     الرابطُ المتوقَّع: https://procorners-labs.github.io/schoolz-yemen-legal/delete-account.html
+-->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>طلب حذف الحساب — يمن سكولز</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin:0; padding:24px; background:#f5f4f0; color:#1b2b2a;
+         font-family:-apple-system,Segoe UI,Roboto,Tahoma,sans-serif; line-height:1.85; }
+  main { max-width:760px; margin:0 auto; background:#fff; border-radius:14px;
+         padding:28px 26px; box-shadow:0 2px 14px rgba(0,84,72,.08); }
+  h1 { color:#005448; font-size:26px; margin:0 0 6px; }
+  h2 { color:#005448; font-size:19px; margin:26px 0 8px; }
+  .sub { color:#5b6b69; margin:0 0 18px; }
+  .rule { height:4px; width:120px; background:#cc900c; border-radius:3px; margin:10px 0 0; }
+  ol, ul { padding-inline-start:22px; }
+  li { margin:7px 0; }
+  table { width:100%; border-collapse:collapse; margin-top:10px; }
+  th, td { border:1px solid #dfe5e4; padding:9px 11px; text-align:right; font-size:15px; }
+  th { background:#eef4f3; color:#005448; }
+  .en { direction:ltr; text-align:left; margin-top:34px; padding-top:20px;
+        border-top:1px solid #e3e8e7; }
+  .en h2, .en h1 { text-align:left; }
+  a { color:#005448; }
+  .note { background:#fff8e8; border-inline-start:4px solid #cc900c;
+          padding:12px 14px; border-radius:8px; margin-top:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>طلب حذف الحساب والبيانات</h1>
+  <p class="sub">تطبيق <strong>يمن سكولز</strong> (Yemen Schoolz) — المطوّر: Procorners</p>
+  <div class="rule"></div>
+
+  <h2>كيف تطلب حذف حسابك</h2>
+  <ol>
+    <li>أرسل بريداً إلكترونياً إلى
+        <strong><a href="mailto:procorners.shop@gmail.com">procorners.shop@gmail.com</a></strong>
+        بعنوان: <em>طلب حذف حساب — يمن سكولز</em>.</li>
+    <li>اذكر في الرسالة: <strong>اسم المدرسة</strong> و<strong>اسم المستخدم</strong> وصفتك
+        (معلّم / طالب / وليّ أمر / إدارة).</li>
+    <li>أو تواصل مباشرةً مع <strong>إدارة مدرستك</strong> — فهي مالكةُ بيانات طلابها
+        ومعلّميها وتستطيع تنفيذ الحذف من لوحة الإدارة.</li>
+  </ol>
+  <p>تُنفَّذ الطلباتُ خلال <strong>٣٠ يوماً</strong> كحدٍّ أقصى من تأكيد هويّة صاحب الطلب.</p>
+
+  <h2>ما الذي يُحذف وما الذي يُحتفَظ به</h2>
+  <table>
+    <tr><th>البيانات</th><th>الإجراء</th></tr>
+    <tr><td>حسابُ المستخدم (اسمُ المستخدم وكلمةُ المرور والصلاحيات)</td>
+        <td><strong>يُحذف نهائياً</strong></td></tr>
+    <tr><td>رمزُ إشعارات الجهاز (FCM)</td>
+        <td><strong>يُحذف نهائياً</strong> ويتوقّف إرسالُ الإشعارات</td></tr>
+    <tr><td>السجلّاتُ الأكاديميّة (الدرجات · الحضور · الملاحظات)</td>
+        <td>تملكها <strong>المدرسة</strong>؛ تُحذف بطلب المدرسة أو وليّ الأمر وفق أنظمة
+            حفظ السجلّات المدرسيّة المعمول بها</td></tr>
+    <tr><td>سجلّاتُ الأعطال والتشخيص (Crashlytics)</td>
+        <td>مجهولةُ الهويّة، وتُحذف تلقائياً خلال <strong>٩٠ يوماً</strong></td></tr>
+    <tr><td>نُسخُ الأمان الاحتياطيّة</td>
+        <td>تُمحى ضمن دورة الاستبدال خلال <strong>٩٠ يوماً</strong> من تنفيذ الحذف</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>ملاحظة:</strong> لا يُنشئ التطبيقُ حساباتِ معلّمين أو طلابٍ ذاتياً — تُصدرها
+    كلُّ مدرسةٍ لمنتسبيها. ولذلك يمرّ طلبُ الحذف عبر المدرسة أو عبر بريد الدعم أعلاه.
+  </div>
+
+  <div class="en">
+    <h2>Account &amp; Data Deletion Request</h2>
+    <p><strong>App:</strong> Yemen Schoolz (يمن سكولز) &nbsp;·&nbsp;
+       <strong>Developer:</strong> Procorners</p>
+    <p><strong>How to request deletion:</strong> email
+       <a href="mailto:procorners.shop@gmail.com">procorners.shop@gmail.com</a> with the
+       subject “Account deletion request — Yemen Schoolz”, stating your school name,
+       username and role. You may also contact your school's administration directly.
+       Requests are processed within <strong>30 days</strong> of identity confirmation.</p>
+    <p><strong>Deleted permanently:</strong> user account (username, password, roles) and
+       the device push-notification token.<br>
+       <strong>Owned by the school:</strong> academic records (grades, attendance, notes) —
+       deleted on request of the school or the parent, subject to applicable school
+       record-keeping rules.<br>
+       <strong>Retention:</strong> anonymised crash/diagnostic logs are deleted automatically
+       within <strong>90 days</strong>; backups are rotated out within <strong>90 days</strong>
+       of deletion.</p>
+    <p>Teacher and student accounts are issued by each school; self-registration is not
+       available for them.</p>
+  </div>
+</main>
+</body>
+</html>
